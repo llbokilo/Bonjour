@@ -1,8 +1,8 @@
 import React, {Component} from 'react';  
-import {Platform, StyleSheet, Text, View} from 'react-native';  
-  
-type Props = {};  
-export default class App extends Component<Props> {  
+import {Text, View} from 'react-native';
+import About from "./About";  
+ 
+export default class App extends Component {  
   render() {  
     return (  
       <View>  
