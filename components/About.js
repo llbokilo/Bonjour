@@ -5,7 +5,7 @@ export default class About extends Component {
     render() {
         return (
             <View>
-                <Text>A propo de Super Felin</Text>
+                <Text>A propos de Super Felin</Text>
                 <Text>Lorem ipsum dolores</Text>
             </View>
       );
