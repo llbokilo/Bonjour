@@ -1,28 +1,24 @@
-import React, {Component} from 'react';  
-import {Text, View, TextInput} from 'react-native';
-import About from "./components/About";  
- 
-export default class App extends Component {  
-  constructor(props){
-    super(props);
-    this.state={name:"Azrael"};
-    console.log("Contenu de props: ", this.props);
-  }
+import React, { Component } from "react";
+import { Text, View } from "react-native";
+import About from "./components/About";
+import Home from "./components/Home";
+import { NavigationContainer } from "@react-navigation/native";
+import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 
-  setChatName(pChatname){
-    this.setState({name:pChatName});
-    console.log("Mon chat s'appelle ", this.state.name);
-  }
+const Tab = createBottomTabNavigator();
 
-  render() {  
-    return (  
-      <View>  
-        <Text>Logan vous dit:</Text>  
-        <Text>Hello World!!!</Text>
-        <TextInput value={this.state.name}
-        onChangeText={(chatName)=>this.setChatName(chatName)}/>
-        <About />
-      </View>  
-    );  
-  }  
+export default class App extends Component {
+  render() {
+    return (
+      <View>
+        <Text>Waaaaaaaaaah</Text>
+        <NavigationContainer>
+          <Tab.Navigator>
+            <Tab.Screen name="Maison" component={Home} />
+            
+          </Tab.Navigator>
+        </NavigationContainer>
+      </View>
+    );
+  }
 }
