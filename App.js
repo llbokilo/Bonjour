@@ -15,7 +15,7 @@ export default class App extends Component {
         <NavigationContainer>
           <Tab.Navigator>
             <Tab.Screen name="Maison" component={Home} />
-            
+            <Tab.Screen name="A Propos" component={About} />
           </Tab.Navigator>
         </NavigationContainer>
       </View>
